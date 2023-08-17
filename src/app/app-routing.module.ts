@@ -7,7 +7,7 @@ const routes: Routes = [
     path: '', //TODO: Private!,
     component: HomePageComponent,
     loadChildren: () =>
-      import('../app/modules/home/home.module').then((m) => m.HomeModule),
+      import('@modules/home/home.module').then((m) => m.HomeModule),
   },
   {
     path: '**',
