@@ -1,0 +1,4 @@
+<div class="ui-block-item">
+  <b *ngIf="loading$ | async">Loading...</b>
+  <app-ui-item [item]="item" *ngFor="let item of items$ | async "></app-ui-item>
+</div>
