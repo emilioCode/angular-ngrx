@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ShowCasePageComponent } from './pages/show-case-page/show-case-page.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: ShowCasePageComponent,
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
